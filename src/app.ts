@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import cors, { CorsOptions } from "cors";
 // routes
 import healthRouter from "./routes/health.route";
+import mailRouter from "./routes/mail.route";
 
 const app = express();
 
@@ -35,5 +36,6 @@ app.use(express.static("public"));
 
 // routes
 app.use("/api/v1/health", healthRouter);
+app.use("/api/v1/mail", mailRouter);
 
 export default app;
