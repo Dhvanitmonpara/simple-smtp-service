@@ -67,7 +67,7 @@ const mailTemplates: Record<
     };
   },
   WELCOME: async (d) => {
-    const html = await render(<elcomeEmail username={d?.username ?? "User"} projectName="MyApp" />);
+    const html = await render(<WelcomeEmail username={d?.username ?? "User"} projectName="MyApp" />);
     return {
       subject: "Welcome to MyApp!",
       html,
