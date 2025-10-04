@@ -10,7 +10,7 @@
     "dev": "tsx src/server.ts"
   },
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "keywords": [],
   "author": "",
