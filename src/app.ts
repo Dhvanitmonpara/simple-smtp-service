@@ -1,10 +1,10 @@
-import { env } from "./conf/env";
+import { env } from "./conf/env.js";
 import express from "express";
 import cookieParser from "cookie-parser";
 import cors, { CorsOptions } from "cors";
 // routes
-import healthRouter from "./routes/health.route";
-import mailRouter from "./routes/mail.route";
+import healthRouter from "./routes/health.route.js";
+import mailRouter from "./routes/mail.route.js";
 
 const app = express();
 

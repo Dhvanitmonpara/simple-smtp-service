@@ -3,14 +3,14 @@ import nodemailer, {
   Transporter,
   TransportOptions,
 } from "nodemailer";
-import { env } from "../conf/env";
+import { env } from "../conf/env.js";
 import crypto from "crypto";
 import { render } from "@react-email/render";
-import OtpVerificationEmail from "../emails/OtpVerificationEmail";
-import FeedbackSentEmail from "../emails/FeedbackSent";
-import FeedbackReceivedEmail from "../emails/FeedbackReceivedEmail";
-import NewDeviceLoginEmail from "../emails/NewDeviceLogin";
-import WelcomeEmail from "../emails/WelcomeEmail";
+import OtpVerificationEmail from "../emails/OtpVerificationEmail.js";
+import FeedbackSentEmail from "../emails/FeedbackSent.js";
+import FeedbackReceivedEmail from "../emails/FeedbackReceivedEmail.js";
+import NewDeviceLoginEmail from "../emails/NewDeviceLogin.js";
+import WelcomeEmail from "../emails/WelcomeEmail.js";
 
 type MailType =
   | "OTP"

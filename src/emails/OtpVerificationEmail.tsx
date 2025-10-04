@@ -1,5 +1,5 @@
 import { Heading, Row, Section, Text } from "@react-email/components";
-import BaseLayout from "./components/BaseLayout";
+import BaseLayout from "./components/BaseLayout.js";
 
 interface VerificationEmailProps {
   username: string;

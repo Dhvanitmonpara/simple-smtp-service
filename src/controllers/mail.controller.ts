@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { ApiError, ApiResponse, AsyncHandler } from "../utils/ApiHelpers";
-import { MailService } from "../services/mail.service";
+import { ApiError, ApiResponse, AsyncHandler } from "../utils/ApiHelpers.js";
+import { MailService } from "../services/mail.service.js";
 
 const mailService = new MailService();
 

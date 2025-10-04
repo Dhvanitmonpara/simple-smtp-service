@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS",
+    "target": "es2020",
+    "module": "nodenext",
     "outDir": "dist",
     "strict": true,
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "jsx": "react-jsx"

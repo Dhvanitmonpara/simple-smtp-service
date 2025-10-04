@@ -1,5 +1,5 @@
 import { Section, Text } from "@react-email/components";
-import BaseLayout from "./components/BaseLayout";
+import BaseLayout from "./components/BaseLayout.js";
 
 export default function WelcomeEmail({ username, projectName }: { username: string; projectName: string }) {
   return (
