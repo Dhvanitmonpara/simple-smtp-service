@@ -7,23 +7,14 @@
     "test": "node dist/src/server.js",
     "build": "tsc",
     "start": "node dist/src/index.js",
-    "vercel": "node dist/api/server.js",
     "dev": "tsx src/server.ts"
-  },
-  "engines": {
-    "node": "22.x"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "overrides": {
-    "esbuild": "^0.25.10",
-    "path-to-regexp": "^8.3.0"
-  },
   "dependencies": {
     "@react-email/components": "^0.5.5",
-    "@vercel/node": "^5.3.24",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
