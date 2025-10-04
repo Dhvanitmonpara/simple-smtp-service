@@ -7,7 +7,7 @@
     "test": "node dist/src/server.js",
     "build": "tsc",
     "start": "node dist/src/index.js",
-    "vercel": "node dist/api/index.js",
+    "vercel": "node dist/api/server.js",
     "dev": "tsx src/server.ts"
   },
   "engines": {
