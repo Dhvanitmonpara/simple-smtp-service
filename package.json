@@ -2,11 +2,11 @@
   "name": "simple-smtp",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node dist/src/server.js",
+    "test": "node src/server.js",
     "build": "tsc",
-    "start": "node dist/src/server.js",
+    "start": "node src/server.js",
     "dev": "tsx src/server.ts"
   },
   "keywords": [],
