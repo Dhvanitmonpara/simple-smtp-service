@@ -133,7 +133,7 @@ export class MailService {
 
     try {
       const info = await this.transporter.sendMail({
-        from: this.defaultFrom,
+        from: options.from || this.defaultFrom,
         to,
         subject: tpl.subject,
         text: tpl.text,
