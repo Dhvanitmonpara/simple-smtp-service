@@ -5,6 +5,7 @@ import cors, { CorsOptions } from "cors";
 // routes
 import healthRouter from "./routes/health.route.js";
 import mailRouter from "./routes/mail.route.js";
+import authMiddleware from "./middlewares/auth.middleware.js";
 
 const app = express();
 
@@ -36,7 +37,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 
 // routes
-app.use("/api/v1/health", healthRouter);
+app.use("/api/v1/health", authMiddleware, healthRouter);
 app.use("/api/v1/mail", mailRouter);
 
 export default app;

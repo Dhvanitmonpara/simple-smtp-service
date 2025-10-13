@@ -14,6 +14,7 @@ const zodObject = {
   MAILTRAP_PORT: z.string(),
   MAILTRAP_USER: z.string(),
   MAILTRAP_PASS: z.string(),
+  API_ACCESS_TOKEN: z.string(),
 };
 
 const envSchema = z.object(zodObject);
