@@ -13,13 +13,15 @@ const allowedOrigins = env.ACCESS_CONTROL_ORIGIN
   : [];
 
 const corsOptions: CorsOptions = {
-  origin: function (origin, callback) {
-    if (origin && allowedOrigins.includes(origin)) {
+  origin(origin, callback) {
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
       return callback(null, true);
     }
-    return callback(
-      new Error(`CORS blocked for origin ${origin || "unknown"}`)
-    );
+
+    console.warn(`CORS blocked for origin: ${origin}`);
+    return callback(null, false);
   },
   credentials: true,
   methods: ["GET", "POST", "OPTIONS"],
